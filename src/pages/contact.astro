@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout>
+  <section class="section">
+    <h1>Contact Us</h1>
+    <p>Have questions or feedback? We're here to help!</p>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+  </section>
+
+  <style>
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 400px;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+    }
+    .contact-form button {
+      background: #ffd166;
+      color: #ff6f61;
+      border: none;
+      padding: 10px;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+    .contact-form button:hover {
+      background: #ff9f6e;
+      color: #fff;
+    }
+  </style>
+</Layout>
