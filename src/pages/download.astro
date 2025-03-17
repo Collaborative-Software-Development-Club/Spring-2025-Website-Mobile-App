@@ -3,7 +3,7 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <section class="section">
+  <section class="section download-section">
     <h1>Download Recipe Tracker</h1>
     <p>Get Recipe Tracker today on your favorite platform:</p>
     <div class="download-buttons">
@@ -13,9 +13,36 @@ import Layout from "../layouts/Layout.astro";
   </section>
 
   <style>
-    .download-buttons {
+    .download-section {
+      height: 100vh;
       display: flex;
-      gap: 15px;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #ff6f61, #ffd166);
+      color: #fff;
+      text-align: center;
+    }
+    .download-section h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    .download-section p {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      background: #ffd166;
+      color: #ff6f61;
+      padding: 10px 20px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #ff9f6e;
+      color: #fff;
     }
   </style>
 </Layout>
